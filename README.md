@@ -14,14 +14,16 @@ Summary: Methods and classes for object-oriented programming in R with or withou
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-r.oo-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-r.oo-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-r.oo-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-r.oo-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-r.oo-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-r-oo-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-r.oo-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-r.oo-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-r.oo-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-r.oo-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-r.oo-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-r-oo-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-r.oo/badges/version.svg)](https://anaconda.org/conda-forge/r-r.oo)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-r.oo/badges/downloads.svg)](https://anaconda.org/conda-forge/r-r.oo)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--r.oo-green.svg)](https://anaconda.org/conda-forge/r-r.oo) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-r.oo.svg)](https://anaconda.org/conda-forge/r-r.oo) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-r.oo.svg)](https://anaconda.org/conda-forge/r-r.oo) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-r.oo.svg)](https://anaconda.org/conda-forge/r-r.oo) |
 
 Installing r-r.oo
 =================
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
