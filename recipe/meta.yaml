@@ -1,4 +1,4 @@
-{% set version = '1.21.0' %}
+{% set version = "1.22.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/R.oo_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/R.oo/R.oo_{{ version }}.tar.gz
-  sha256: 645ceec2f815ed39650ca72db87fb4ece7357857875a4ec73e18bfaf647f431c
+  sha256: c0862e4608fb2b8f91ec4494d46c2f3ba7bc44999f9aa3d7b9625d3792e7dd4c
 
 build:
   number: 0
