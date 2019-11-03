@@ -1,4 +1,4 @@
-{% set version = '1.22.0' %}
+{% set version = "1.23.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/R.oo_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/R.oo/R.oo_{{ version }}.tar.gz
-  sha256: c0862e4608fb2b8f91ec4494d46c2f3ba7bc44999f9aa3d7b9625d3792e7dd4c
+  sha256: f5124ce3dbb0a62e8ef1bfce2de2d1dc2f776e8c48fd8cac358f7f5feb592ea1
 
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1001
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -45,13 +45,8 @@ about:
     since 2001 and is now considered very stable.  This is a cross-platform package
     implemented in pure R that defines standard S3 classes without any tricks.
   license_family: LGPL
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast
