@@ -1,4 +1,4 @@
-{% set version = "1.23.0" %}
+{% set version = "1.24.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/R.oo_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/R.oo/R.oo_{{ version }}.tar.gz
-  sha256: f5124ce3dbb0a62e8ef1bfce2de2d1dc2f776e8c48fd8cac358f7f5feb592ea1
+  sha256: 37a1dab8dd668ceba69a1ba36c0c60e9809e29b74bd56d1e8ed519e19c8e3bb6
 
 build:
   noarch: generic
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -39,13 +39,10 @@ test:
 about:
   home: https://github.com/HenrikBengtsson/R.oo
   license: LGPL (>= 2.1)
-  summary: Methods and classes for object-oriented programming in R with or without references.  Large
-    effort has been made on making definition of methods as simple as possible with
-    a minimum of maintenance for package developers.  The package has been developed
-    since 2001 and is now considered very stable.  This is a cross-platform package
-    implemented in pure R that defines standard S3 classes without any tricks.
+  summary: Methods and classes for object-oriented programming in R with or without references.  Large effort has been made on making definition of methods as simple as possible with a minimum of maintenance for package developers.  The package has been developed since 2001 and is now considered very stable.  This is a cross-platform
+    package implemented in pure R that defines standard S3 classes without any tricks.
   license_family: LGPL
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
 
 extra:
   recipe-maintainers:
