@@ -5,11 +5,9 @@ Home: https://github.com/HenrikBengtsson/R.oo
 
 Package license: LGPL (>= 2.1)
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-r.oo-feedstock/blob/master/LICENSE.txt)
 
 Summary: Methods and classes for object-oriented programming in R with or without references.  Large effort has been made on making definition of methods as simple as possible with a minimum of maintenance for package developers.  The package has been developed since 2001 and is now considered very stable.  This is a cross-platform package implemented in pure R that defines standard S3 classes without any tricks.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-r.oo` from the `conda-forge` channel can be achieved by adding `co
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-r.oo` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
