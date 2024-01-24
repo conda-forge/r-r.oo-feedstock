@@ -1,4 +1,4 @@
-{% set version = "1.25.0" %}
+{% set version = "1.26.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/R.oo_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/R.oo/R.oo_{{ version }}.tar.gz
-  sha256: b8b19061774918ee7d9d4330c16c0ea505f7cd02d01343df1e8b2e4fb847beef
+  sha256: f7602b388c2216fbb4d1a31d4040ed92b40dc83d3e3746db7011637db4d44365
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
